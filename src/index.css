@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*applying some general styles*/
+@layer base {
+  
+  body {
+    @apply  text-lg text-black bg-[#E5E5E5];
+  }
+  .section {
+    @apply py-[40px] lg:py-[160px];
+  }
+
+  .link {
+    @apply uppercase tracking-[0.08em];
+  }
+
+  .h1 {
+    @apply text-[60px] lg:text-[118px] tracking-[-2px] leading-none mb-4
+  }
+
+  .h2 {
+    @apply text-[40px] xl:text-[85px] tracking-[-2px] leading-none mb-[38px] text-black max-w-[236px]
+  }  
+
+  /*buttons*/
+  .btn-sm {
+    @apply h-[55px];
+  }
+
+  .btn-lg {
+    @apply h-[67px];
+  }
+
+  .btn-outline {
+    @apply border border-white/70 bg-none hover:bg-white hover:text-black;
+  }
+
+  .btn-dark {
+    @apply bg-black hover:bg-slate-500 transition-all text-white;
+  }
+  .btn-link {
+    @apply px-0 h-auto text-black transition-all hover:text-gray-700;
+  }
+}
